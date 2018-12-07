@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>splash.jpg</file>
+        <file>qml/images/1.png</file>
+        <file>qml/images/2.png</file>
+        <file>qml/images/3.png</file>
+        <file>qml/images/4.png</file>
+        <file>qml/images/close.svg</file>
+        <file>qml/images/internet.svg</file>
+        <file>qml/images/note.svg</file>
+        <file>qml/images/note_info.svg</file>
+    </qresource>
+</RCC>

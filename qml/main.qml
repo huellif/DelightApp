@@ -1,0 +1,1 @@
+import QtQuick 1.1;import com.nokia.symbian 1.1;PageStackWindow{initialPage:MainPage{id:mP;}ToolTip{id:tT;visible:false;}platformSoftwareInputPanelEnabled:true;function create(q){Qt.createComponent(q).createObject(mP);}}

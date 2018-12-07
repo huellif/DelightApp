@@ -1,0 +1,1 @@
+import QtQuick 1.1;import com.nokia.symbian 1.1;ContextMenu{MenuLayout{MenuItem{text:qsTr("Delight Folders");onClicked:create("Selector_menu_delight.qml");}MenuItem{text:qsTr("Default (no folders)");onClicked:create("Selector_menu_classic.qml");}}Component.onCompleted:open();onStatusChanged:if(status===DialogStatus.Closing)destroy();}

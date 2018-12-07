@@ -1,0 +1,1 @@
+import QtQuick 1.1;import com.nokia.symbian 1.1;ContextMenu{MenuLayout{MenuItem{text:qsTr("Disable Aknspasrv");onClicked:create("Selector_Aknspasrv_off.qml");}MenuItem{text:qsTr("Enable Aknspasrv (default in OFW)");onClicked:create("Selector_Aknspasrv_on.qml");}}Component.onCompleted:open();onStatusChanged:if(status===DialogStatus.Closing)destroy();}

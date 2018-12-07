@@ -1,0 +1,1 @@
+import QtQuick 1.1;import com.nokia.symbian 1.1;ToolButton{id:r;property string toolTipText:"";opacity:enabled?1:0.25;onPlatformPressAndHold:{tT.target=r;tT.text=toolTipText;tT.show();}onPlatformReleased:tT.hide();}

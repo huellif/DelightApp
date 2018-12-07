@@ -1,0 +1,1 @@
+import QtQuick 1.1;import com.nokia.symbian 1.1;QueryDialog{titleText:qsTr("Delight Changelogs");icon:"images/note.svg";message:qsTr("Shows the latest CFW Changelogs:")+"\n- 808 v1.x\n- N8-00 v6.x\n- C7-00 v6.x\n- 500 v1.x\n- 700 v1.x\n- X7-00 v1.x\n- E7-00 v1.x\n- C6-01 v1.x\n- 701 v1.x";acceptButtonText:qsTr("Back");onAccepted:destroy();Component.onCompleted:open();}

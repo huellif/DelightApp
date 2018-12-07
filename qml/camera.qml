@@ -1,0 +1,1 @@
+import QtQuick 1.1;import com.nokia.symbian 1.1;QueryDialog{titleText:qsTr("Camera Fixer");icon:"images/note_info.svg";message:qsTr("Problem with Camera?\n\nReturn it to Default settings?");acceptButtonText:qsTr("Fix");rejectButtonText:qsTr("Cancel");onAccepted:Helper.resolver("camera.txt");onStatusChanged:if(status===DialogStatus.Closing)destroy();Component.onCompleted:open();}

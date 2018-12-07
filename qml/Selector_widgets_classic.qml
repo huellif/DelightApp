@@ -1,0 +1,1 @@
+import QtQuick 1.1;import com.nokia.symbian 1.1;QueryDialog{titleText:qsTr("Skin selection");icon:"images/note_info.svg";message:qsTr("Use classic widget skins? (FP1/Refresh)");acceptButtonText:qsTr("OK");rejectButtonText:qsTr("Cancel");onAccepted:Helper.resolver("skins_classic.txt");Component.onCompleted:open();onStatusChanged:if(status===DialogStatus.Closing)destroy();}

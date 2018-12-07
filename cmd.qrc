@@ -1,0 +1,46 @@
+<RCC>
+    <qresource prefix="/">
+        <file>cmd/200159c9.txt</file>
+        <file>cmd/Aknspasrv_off.txt</file>
+        <file>cmd/Aknspasrv_on.txt</file>
+        <file>cmd/Alarms.txt</file>
+        <file>cmd/avkon_disable.txt</file>
+        <file>cmd/avkon_enable.txt</file>
+        <file>cmd/Cache.txt</file>
+        <file>cmd/cache_some.txt</file>
+        <file>cmd/camera.txt</file>
+        <file>cmd/changer.txt</file>
+        <file>cmd/DebugOff.txt</file>
+        <file>cmd/DebugOn.txt</file>
+        <file>cmd/DReg.del</file>
+        <file>cmd/keyboard_black.txt</file>
+        <file>cmd/keyboard_blue.txt</file>
+        <file>cmd/keyboard_default.txt</file>
+        <file>cmd/keyboard_delight.txt</file>
+        <file>cmd/Keylock_off.txt</file>
+        <file>cmd/Keylock_on.txt</file>
+        <file>cmd/lang.txt</file>
+        <file>cmd/Libary.txt</file>
+        <file>cmd/loop.txt</file>
+        <file>cmd/Menu.txt</file>
+        <file>cmd/menu_34.txt</file>
+        <file>cmd/menu_45.txt</file>
+        <file>cmd/menu_default.txt</file>
+        <file>cmd/menu_delight.txt</file>
+        <file>cmd/MiniCMD.txt</file>
+        <file>cmd/patcher.txt</file>
+        <file>cmd/PC.txt</file>
+        <file>cmd/Profiles.txt</file>
+        <file>cmd/sisregistry.txt</file>
+        <file>cmd/skins_classic.txt</file>
+        <file>cmd/skins_delight.txt</file>
+        <file>cmd/skins_FP2.txt</file>
+        <file>cmd/T9.txt</file>
+        <file>cmd/tactile_off.txt</file>
+        <file>cmd/tactile_on.txt</file>
+        <file>cmd/Widgets.txt</file>
+        <file>cmd/cache_off.txt</file>
+        <file>cmd/808_lightOff.txt</file>
+        <file>cmd/808_lightOn.txt</file>
+    </qresource>
+</RCC>
