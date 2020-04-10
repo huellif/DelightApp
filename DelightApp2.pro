@@ -56,13 +56,15 @@ QT += declarative
 DEFINES += QT_USE_FAST_CONCATENATION QT_USE_FAST_OPERATOR_PLUS QT_NO_CAST_TO_ASCII
 DEFINES *= QT_USE_QSTRINGBUILDER
 
-TRANSLATIONS += i18n/DelightApp_en.ts i18n/DelightApp_de.ts
+TRANSLATIONS += i18n/DelightApp_en.ts i18n/DelightApp_de.ts i18n/DelightApp_ru.ts
+
+lupdate_only {
+    SOURCES = qml/*.*
+}
 
 OTHER_FILES += qml/*.* \
                 html/*.* \
-                cmd/*.* \
-    qml/contest.qml \
-    qml/contest_addpopup.qml
+                cmd/*.*
 
 QMAKE_CXXFLAGS += -std=c++0x
 CONFIG += c++11

@@ -34,12 +34,12 @@ This will reset Homescreen and add new Widgets (if you flashed via Update Softwa
     </message>
     <message>
         <location filename="../qml/AboutDialog.qml" line="1"/>
-        <source>Credits</source>
+        <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/AboutDialog.qml" line="1"/>
-        <source>Back</source>
+        <source>Credits</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -119,20 +119,49 @@ Proceed to clear system cache and AknIconSrv cache etc.?</source>
     </message>
 </context>
 <context>
+    <name>ChatFixer</name>
+    <message>
+        <location filename="../qml/ChatFixer.qml" line="3"/>
+        <source>Chat Fixer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/ChatFixer.qml" line="5"/>
+        <source>Problem with Chat icon?
+
+Some chat apps (like Lightbulb, WhatsApp, Nokia Chat) show a chat icon in the notification bar if you have unread messages.
+
+If these apps get closed/crash it still could be enabled.
+Do you want to disable/remove it?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/ChatFixer.qml" line="6"/>
+        <source>Fix</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/ChatFixer.qml" line="7"/>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>CloseDialog</name>
     <message>
-        <location filename="../qml/CloseDialog.qml" line="1"/>
+        <location filename="../qml/CloseDialog.qml" line="4"/>
+        <location filename="../qml/CloseDialog.qml" line="6"/>
         <source>Exit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/CloseDialog.qml" line="1"/>
-        <source>Cancel</source>
+        <location filename="../qml/CloseDialog.qml" line="6"/>
+        <source>Do you want to exit Delight App?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/CloseDialog.qml" line="1"/>
-        <source>Do you want to exit Delight App?</source>
+        <location filename="../qml/CloseDialog.qml" line="7"/>
+        <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -294,7 +323,12 @@ After fixing, phone will rebuild the Index from Scratch!</source>
     <name>MainMenu</name>
     <message>
         <location filename="../qml/MainMenu.qml" line="1"/>
-        <source>Donate</source>
+        <source>huellif - Fabian</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/MainMenu.qml" line="1"/>
+        <source>freaxs_r_us - Eric</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -333,15 +367,38 @@ Hold an option for more information</source>
     </message>
 </context>
 <context>
-    <name>MainSubMenu</name>
+    <name>MainSubMenufreaxs</name>
     <message>
-        <location filename="../qml/MainSubMenu.qml" line="1"/>
-        <source>Donate huellif</source>
+        <location filename="../qml/MainSubMenufreaxs.qml" line="1"/>
+        <source>Email freaxsrus@gmail.com</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MainSubMenu.qml" line="1"/>
-        <source>Donate freaxs_r_us</source>
+        <location filename="../qml/MainSubMenufreaxs.qml" line="1"/>
+        <source>Twitter @freaxs_r_us</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/MainSubMenufreaxs.qml" line="1"/>
+        <source>Donate via PayPal</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MainSubMenuhuellif</name>
+    <message>
+        <location filename="../qml/MainSubMenuhuellif.qml" line="1"/>
+        <source>Email huellif@gmail.com</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/MainSubMenuhuellif.qml" line="1"/>
+        <source>Twitter @huellif</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/MainSubMenuhuellif.qml" line="1"/>
+        <source>Donate via PayPal</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -385,6 +442,11 @@ Continue?</source>
     </message>
     <message>
         <location filename="../qml/MiniCMD.qml" line="1"/>
+        <source>Command line</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/MiniCMD.qml" line="1"/>
         <source>Information</source>
         <translation type="unfinished"></translation>
     </message>
@@ -399,6 +461,29 @@ Continue?</source>
 Thanks to Necat for this great suggestion!
 
 All credit for MiniCMD goes to Just Fancy.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MiniCMD_cli</name>
+    <message>
+        <location filename="../qml/MiniCMD_cli.qml" line="4"/>
+        <source>MiniCMD command line</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/MiniCMD_cli.qml" line="7"/>
+        <source>Run</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/MiniCMD_cli.qml" line="22"/>
+        <source>Clear</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/MiniCMD_cli.qml" line="22"/>
+        <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -424,16 +509,6 @@ All credit for MiniCMD goes to Just Fancy.</source>
     </message>
     <message>
         <location filename="../qml/MiniCMD_info.qml" line="1"/>
-        <source>Back</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/MiniCMD_info.qml" line="1"/>
-        <source>Commands</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/MiniCMD_info.qml" line="1"/>
         <source>MiniCMD is a little framework for Symbian, it can run .txt files like .cmd or .bat files on a Windows PC.
 
 Our Delight apps (Updater, Backup&amp;Restore, empty UDA and some parts of this app) are based on it.
@@ -443,6 +518,16 @@ To test your own .txt, create a .txt via X-Plore, you have to save it as unicode
 Press the commands button to see all MiniCMD commands.
 
 To launch a .txt check the other options on this page.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/MiniCMD_info.qml" line="1"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/MiniCMD_info.qml" line="1"/>
+        <source>Commands</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -528,59 +613,73 @@ Return them to Default settings?</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/QCenRep.cpp" line="32"/>
-        <source>You have to enable CRepository4all in ROMPatcher +.</source>
+        <location filename="../src/delight.cpp" line="65"/>
+        <source>There&apos;s a program in Delight&apos;s reboot scheduler. You have to reboot your device before you&apos;re able to run other functions.
+Do you want to reboot now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/QCenRep.cpp" line="34"/>
-        <location filename="../src/delight.cpp" line="41"/>
+        <location filename="../src/delight.cpp" line="67"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/QCenRep.cpp" line="48"/>
+        <location filename="../src/delight.cpp" line="202"/>
+        <source>Error!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/delight.cpp" line="262"/>
+        <source>The new FM Transmitter RDS text is </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/delight.cpp" line="262"/>
         <source>You have to reboot your device to apply it.
 Do you want to reboot now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/QCenRep.cpp" line="48"/>
-        <source>The new FM Transmitter RDS text is </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/QCenRep.cpp" line="50"/>
+        <location filename="../src/delight.cpp" line="264"/>
         <source>Success</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/delight.cpp" line="153"/>
+        <location filename="../src/delight.cpp" line="313"/>
         <source>Success!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/delight.cpp" line="188"/>
+        <location filename="../src/delight.cpp" line="343"/>
         <source>Do you want to open the current </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/delight.cpp" line="190"/>
+        <location filename="../src/delight.cpp" line="345"/>
         <source>Preview</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/delight.cpp" line="39"/>
-        <source>There&apos;s a program in Delight&apos;s reboot scheduler. You have to reboot your device before you&apos;re able to run other functions.
-Do you want to reboot now?</source>
+        <location filename="../src/delight.cpp" line="576"/>
+        <source> is already in autostart!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/delight.cpp" line="586"/>
+        <source> doesn&apos;t exist!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/delight.cpp" line="625"/>
+        <source>Delete all backups</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>QSplashScreen</name>
     <message>
-        <location filename="../main.cpp" line="80"/>
-        <source>Loading...</source>
+        <location filename="../src/main.cpp" line="69"/>
+        <source>Loading ...</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -645,7 +744,7 @@ WARNING: This will reset your ROMPatcher autostart config.</source>
 
 For Some minutes your phone will be slowed down due to Backup process! Do make sure that you have enabled RemoveHashCheck patch in RomPatcher+. If not, Cancel and Enable the patch first.
 
-Do you wan to launch it?</source>
+Do you want to launch it?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -687,28 +786,33 @@ Extras is split into multiple sub-apps:
 <context>
     <name>SelectorFMTX</name>
     <message>
-        <location filename="../qml/SelectorFMTX.qml" line="1"/>
+        <location filename="../qml/SelectorFMTX.qml" line="4"/>
         <source>FM-Transmitter RDS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SelectorFMTX.qml" line="1"/>
+        <location filename="../qml/SelectorFMTX.qml" line="7"/>
         <source>Apply</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SelectorFMTX.qml" line="1"/>
+        <location filename="../qml/SelectorFMTX.qml" line="9"/>
         <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SelectorFMTX.qml" line="1"/>
+        <location filename="../qml/SelectorFMTX.qml" line="9"/>
+        <source>Clear</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorFMTX.qml" line="19"/>
         <source>Set a new FM-Transmitter RDS text.
 The maximum size is 8 letters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SelectorFMTX.qml" line="1"/>
+        <location filename="../qml/SelectorFMTX.qml" line="23"/>
         <source>This device has no FM Transmitter!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -716,22 +820,22 @@ The maximum size is 8 letters.</source>
 <context>
     <name>SelectorSubMenu_Customization</name>
     <message>
-        <location filename="../qml/SelectorSubMenu_Customization.qml" line="1"/>
+        <location filename="../qml/SelectorSubMenu_Customization.qml" line="2"/>
         <source>Set a new startup animation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SelectorSubMenu_Customization.qml" line="1"/>
+        <location filename="../qml/SelectorSubMenu_Customization.qml" line="3"/>
         <source>Set a new startup sound</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SelectorSubMenu_Customization.qml" line="1"/>
+        <location filename="../qml/SelectorSubMenu_Customization.qml" line="4"/>
         <source>Set a new shutdown animation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SelectorSubMenu_Customization.qml" line="1"/>
+        <location filename="../qml/SelectorSubMenu_Customization.qml" line="5"/>
         <source>Set a new shutdown sound</source>
         <translation type="unfinished"></translation>
     </message>
@@ -787,6 +891,57 @@ By default it&apos;s disabled in Delight.</source>
     </message>
 </context>
 <context>
+    <name>SelectorSubMenu_autostart</name>
+    <message>
+        <location filename="../qml/SelectorSubMenu_autostart.qml" line="8"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorSubMenu_autostart.qml" line="9"/>
+        <source>Add new</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorSubMenu_autostart.qml" line="10"/>
+        <source>Refresh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorSubMenu_autostart.qml" line="11"/>
+        <source>Menu</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorSubMenu_autostart.qml" line="24"/>
+        <source>Active autostart items</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorSubMenu_autostart.qml" line="29"/>
+        <source>Disabled autostart items</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SelectorSubMenu_autostart_menu</name>
+    <message>
+        <location filename="../qml/SelectorSubMenu_autostart_menu.qml" line="4"/>
+        <source>Backup active autostart items</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorSubMenu_autostart_menu.qml" line="5"/>
+        <source>Restore a backup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorSubMenu_autostart_menu.qml" line="6"/>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SelectorSubMenu_caching</name>
     <message>
         <location filename="../qml/SelectorSubMenu_caching.qml" line="1"/>
@@ -805,10 +960,41 @@ By default it&apos;s disabled in Delight.</source>
     </message>
 </context>
 <context>
+    <name>SelectorSubMenu_camera</name>
+    <message>
+        <location filename="../qml/SelectorSubMenu_camera.qml" line="5"/>
+        <source>Camera counter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorSubMenu_camera.qml" line="10"/>
+        <source>Apply</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorSubMenu_camera.qml" line="13"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorSubMenu_camera.qml" line="21"/>
+        <source>Set a new camera counter value.
+(That&apos;s the increasing number which gets stored as image name in the default camera app)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SelectorSubMenu_debug</name>
     <message>
         <location filename="../qml/SelectorSubMenu_debug.qml" line="1"/>
         <source>Debug</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorSubMenu_debug.qml" line="1"/>
+        <source>Symbian has a debug mode a.k.a Extended panic code, this is intresting for developers or patch makers. It&apos;s related to C:\resource\Errd\
+
+Some parts of this are working on the fly, some require a reboot.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -819,13 +1005,6 @@ By default it&apos;s disabled in Delight.</source>
     <message>
         <location filename="../qml/SelectorSubMenu_debug.qml" line="1"/>
         <source>Disable</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/SelectorSubMenu_debug.qml" line="1"/>
-        <source>Symbian has a debug mode a.k.a Extended panic code, this is intresting for developers or patch makers. It&apos;s related to C:\resource\Errd\
-
-Some parts of this are working on the fly, some require a reboot.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -852,6 +1031,59 @@ By default it&apos;s disabled in Delight.</source>
     <message>
         <location filename="../qml/SelectorSubMenu_fader.qml" line="1"/>
         <source>Disable</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SelectorSubMenu_hash</name>
+    <message>
+        <location filename="../qml/SelectorSubMenu_hash.qml" line="3"/>
+        <source>Recalculate Hash</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorSubMenu_hash.qml" line="7"/>
+        <source>Add</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorSubMenu_hash.qml" line="13"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorSubMenu_hash.qml" line="13"/>
+        <source>Clear</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorSubMenu_hash.qml" line="27"/>
+        <source>Recalculate the hash of a .exe:
+
+Enter the full path, e.g. E:\sys\bin\app.exe</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SelectorSubMenu_iso</name>
+    <message>
+        <location filename="../qml/SelectorSubMenu_iso.qml" line="1"/>
+        <source>Current file: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorSubMenu_iso.qml" line="1"/>
+        <source>Use phone as modem (default)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorSubMenu_iso.qml" line="1"/>
+        <source>Choose an .iso file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorSubMenu_iso.qml" line="1"/>
+        <source>WARNING: Changing this while using Phone As Modem USB-Mode doesn&apos;t work!</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -891,6 +1123,29 @@ Touch on a picture to apply a new keyboard skin.</source>
         <source>By default the main menu of your phone has 3*4 icons (portrait), do you want to use 4*5?
 
 Changing this setting requires a reboot.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SelectorSubMenu_music</name>
+    <message>
+        <location filename="../qml/SelectorSubMenu_music.qml" line="7"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorSubMenu_music.qml" line="8"/>
+        <source>Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorSubMenu_music.qml" line="9"/>
+        <source>Add new</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SelectorSubMenu_music.qml" line="13"/>
+        <source>Music library folders</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1003,6 +1258,80 @@ WARNING: Your phone will reboot after changing this.</source>
     <message>
         <location filename="../qml/Selector_Aknspasrv_on.qml" line="1"/>
         <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Selector_SubMenuKeylight</name>
+    <message>
+        <location filename="../qml/Selector_SubMenuKeylight.qml" line="5"/>
+        <source>Keylight</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Selector_SubMenuKeylight.qml" line="6"/>
+        <source>Do you want to disable or enable the green, white and red key LEDs of your phone?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Selector_SubMenuKeylight.qml" line="7"/>
+        <source>Enable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Selector_SubMenuKeylight.qml" line="8"/>
+        <source>Disable</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Selector_actionDisabledAutostart</name>
+    <message>
+        <location filename="../qml/Selector_actionDisabledAutostart.qml" line="3"/>
+        <source>Modify </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Selector_actionDisabledAutostart.qml" line="7"/>
+        <source>Enable/Remove </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Selector_actionDisabledAutostart.qml" line="7"/>
+        <source>&apos;s disabled autostart?</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Selector_addAutostart</name>
+    <message>
+        <location filename="../qml/Selector_addAutostart.qml" line="3"/>
+        <source>Add new process</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Selector_addAutostart.qml" line="7"/>
+        <source>Add</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Selector_addAutostart.qml" line="13"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Selector_addAutostart.qml" line="13"/>
+        <source>Clear</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Selector_addAutostart.qml" line="27"/>
+        <source>Add a new process to autostart:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Selector_addAutostart.qml" line="39"/>
+        <source>Launch in foreground</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1318,6 +1647,24 @@ WARNING: Your phone will reboot after changing the keyboard.</source>
     </message>
 </context>
 <context>
+    <name>Selector_removeAutostart</name>
+    <message>
+        <location filename="../qml/Selector_removeAutostart.qml" line="3"/>
+        <source>Modify </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Selector_removeAutostart.qml" line="7"/>
+        <source>Remove/Disable </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Selector_removeAutostart.qml" line="7"/>
+        <source> from autostart?</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Selector_scrolling</name>
     <message>
         <location filename="../qml/Selector_scrolling.qml" line="1"/>
@@ -1557,6 +1904,19 @@ credit goes to akahroba.</source>
     </message>
 </context>
 <context>
+    <name>StartupReason</name>
+    <message>
+        <location filename="../qml/StartupReason.qml" line="3"/>
+        <source>KPSStartupReason</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/StartupReason.qml" line="6"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>T9Fixer</name>
     <message>
         <location filename="../qml/T9Fixer.qml" line="1"/>
@@ -1690,6 +2050,11 @@ Return it to Default settings?</source>
     </message>
     <message>
         <location filename="../qml/classic.qml" line="1"/>
+        <source>Chat Icon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/classic.qml" line="1"/>
         <source>Clean Music and Gallery Libary</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1706,11 +2071,6 @@ Return it to Default settings?</source>
     <message>
         <location filename="../qml/classic.qml" line="1"/>
         <source>Profiles Fixer</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/classic.qml" line="1"/>
-        <source>Registry Backup/Restore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1740,34 +2100,49 @@ Return it to Default settings?</source>
     </message>
 </context>
 <context>
-    <name>manual</name>
+    <name>contest</name>
     <message>
-        <location filename="../qml/manual.qml" line="1"/>
+        <location filename="../qml/contest.qml" line="6"/>
         <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/manual.qml" line="1"/>
+        <location filename="../qml/contest.qml" line="35"/>
+        <source>Apply new server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/contest.qml" line="48"/>
+        <source>Reset Contest server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/contest.qml" line="55"/>
+        <location filename="../qml/contest.qml" line="60"/>
+        <source>Current server:
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>manual</name>
+    <message>
+        <location filename="../qml/manual.qml" line="3"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/manual.qml" line="6"/>
         <source>Extras</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/manual.qml" line="1"/>
+        <location filename="../qml/manual.qml" line="7"/>
         <source>Classic Resolver</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/manual.qml" line="1"/>
-        <source>Language and Garbage Cleaner</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/manual.qml" line="1"/>
-        <source>Language Changer</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/manual.qml" line="1"/>
+        <location filename="../qml/manual.qml" line="9"/>
         <source>Reboot the phone</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1775,88 +2150,108 @@ Return it to Default settings?</source>
 <context>
     <name>selector</name>
     <message>
-        <location filename="../qml/selector.qml" line="1"/>
+        <location filename="../qml/selector.qml" line="6"/>
         <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/selector.qml" line="1"/>
+        <location filename="../qml/selector.qml" line="24"/>
+        <source>Aknspasrv</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/selector.qml" line="29"/>
         <source>Application caching config</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/selector.qml" line="1"/>
+        <location filename="../qml/selector.qml" line="34"/>
+        <source>Autostart editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/selector.qml" line="39"/>
+        <source>Camera counter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/selector.qml" line="44"/>
         <source>Debug mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/selector.qml" line="1"/>
+        <location filename="../qml/selector.qml" line="49"/>
         <source>FM Transmitter RDS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/selector.qml" line="1"/>
-        <source>FP2 only: Keyboard</source>
+        <location filename="../qml/selector.qml" line="54"/>
+        <source>Hash calculator</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/selector.qml" line="1"/>
+        <location filename="../qml/selector.qml" line="59"/>
         <source>Homscreen shortcut captions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/selector.qml" line="1"/>
+        <location filename="../qml/selector.qml" line="65"/>
+        <source>Keyboard skin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/selector.qml" line="71"/>
         <source>Keylock vibration</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/selector.qml" line="1"/>
+        <location filename="../qml/selector.qml" line="76"/>
+        <source>Keylight</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/selector.qml" line="81"/>
         <source>Light settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/selector.qml" line="1"/>
+        <location filename="../qml/selector.qml" line="86"/>
         <source>Menu icon layout</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/selector.qml" line="1"/>
+        <location filename="../qml/selector.qml" line="91"/>
         <source>Menu folders</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/selector.qml" line="1"/>
+        <location filename="../qml/selector.qml" line="96"/>
         <source>Popupfader</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/selector.qml" line="1"/>
+        <location filename="../qml/selector.qml" line="101"/>
+        <source>Phone as modem/mount an .iso</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/selector.qml" line="106"/>
         <source>Scrolling speed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/selector.qml" line="1"/>
-        <source>SMS Conversation skin</source>
+        <location filename="../qml/selector.qml" line="111"/>
+        <source>Startup/Shutdown customization</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/selector.qml" line="1"/>
+        <location filename="../qml/selector.qml" line="116"/>
         <source>Tactile feedback in calls</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/selector.qml" line="1"/>
+        <location filename="../qml/selector.qml" line="121"/>
         <source>Widget skins</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/selector.qml" line="1"/>
-        <source>FP2 only: Aknspasrv</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/selector.qml" line="1"/>
-        <source>Startup/Shutdown customization</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1884,6 +2279,54 @@ After your phone rebooted it has to recreate some files, you can&apos;t install 
     <message>
         <location filename="../qml/sisregistry.qml" line="1"/>
         <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>tools</name>
+    <message>
+        <location filename="../qml/tools.qml" line="2"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/tools.qml" line="6"/>
+        <source>Autostart editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/tools.qml" line="7"/>
+        <source>Connectivity test editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/tools.qml" line="8"/>
+        <source>Debug mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/tools.qml" line="9"/>
+        <source>Hash calculator</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/tools.qml" line="10"/>
+        <source>Language and Garbage Cleaner</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/tools.qml" line="11"/>
+        <source>Language Changer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/tools.qml" line="12"/>
+        <source>Registry Backup/Restore</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/tools.qml" line="13"/>
+        <source>Startup Reason</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
