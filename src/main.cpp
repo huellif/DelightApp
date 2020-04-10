@@ -36,17 +36,20 @@ int main(int argc, char *argv[]) noexcept {
     const QString lang = QLocale::system().name().left(2);
 
     Delight helper;
+    QTranslator* translator;
 
     if (lang == QLatin1String("en")) {
         splash->showMessage("Loading ...", Qt::AlignHCenter | Qt::AlignBottom, Qt::white);
     } else {
         if (QFile::exists("Z:/resource/qt/translations/DelightApp_" + lang + ".qm")) {
-            QTranslator translator;
-            translator.load("DelightApp_" + lang, "Z:/resource/qt/translations");
-            app.installTranslator(&translator);
+            translator = new QTranslator(&app);
+            translator->load("DelightApp_" + lang, "Z:/resource/qt/translations");
+            app.installTranslator(translator);
             splash->showMessage(QSplashScreen::tr("Loading ..."), Qt::AlignHCenter | Qt::AlignBottom, Qt::white);
         } else {
-            splash->showMessage("Error\nthere's no translation for" + lang, Qt::AlignHCenter | Qt::AlignBottom, Qt::white);
+            //splash->showMessage("Error\nthere's no translation for" + lang, Qt::AlignHCenter | Qt::AlignBottom, Qt::white);
+            //Fallback to english
+            splash->showMessage("Loading ...", Qt::AlignHCenter | Qt::AlignBottom, Qt::white);
         }
     }
 
