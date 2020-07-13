@@ -1,0 +1,1 @@
+import QtQuick 1.1;import com.nokia.symbian 1.1;ContextMenu{MenuLayout{MenuItem{text:qsTr("Ovi (default)");onClicked:create("Selector_MapServer_ovi.qml");}MenuItem{text:"mapLoader";onClicked:create("Selector_MapServer_emmsite.qml");}}Component.onCompleted:open();onStatusChanged:if(status===DialogStatus.Closing)destroy();}

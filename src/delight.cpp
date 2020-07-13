@@ -1,4 +1,4 @@
-#include "delight.h"
+#include "Delight.h"
 
 #include <bautils.h>
 #include <AknGlobalNote.h>
@@ -62,9 +62,9 @@ TBool Delight::del() noexcept {
         CleanupStack::PushL(pDlg);
         TRequestStatus iStatus;
         pDlg->ShowMsgQueryL(iStatus ,
-                            TPtrC16 (reinterpret_cast<const TText*>(QObject::tr("There's a program in Delight's reboot scheduler. You have to reboot your device before you're able to run other functions.\nDo you want to reboot now?").constData())),
+                            TPtrC16 (reinterpret_cast<const TText*>(QObject::tr("There is a program in Delight's reboot scheduler. You have to reboot your device before you will be able to run other functions.\nDo you want to reboot now?").constData())),
                             0x8cc0024,
-                            TPtrC16 (reinterpret_cast<const TText*>(QObject::tr("Error").constData())),
+                            TPtrC16 (reinterpret_cast<const TText*>(QObject::tr("Error!").constData())),
                             KNullDesC,
                             0,
                             -1,
@@ -89,58 +89,6 @@ void Delight::execute(const QString &myMiniCMDString) noexcept {
     out << "delete " << DelightTXT << '\n' << myMiniCMDString;
     file.close();
     run(0);
-}
-
-QVariant Delight::getMusicLibrary() noexcept {
-    QString val;
-    QCenRep::ReadValStr(TUid::Uid(0x101FFCD2), 0x1, &val);
-    if(val.isEmpty()) {
-        return QVariant();
-    }
-    return QVariant::fromValue(val.split('|'));
-}
-
-bool Delight::addMusicLibrary() noexcept {
-    QString value = QFileDialog::getExistingDirectory();
-
-    if(value.isEmpty()) {
-        return false;
-    }
-
-    QString val;
-    QCenRep::ReadValStr(TUid::Uid(0x101FFCD2), 0x1, &val);
-    if(!val.isEmpty()) {
-        val += '|';
-    }
-    val += value.replace('/','\\');
-
-    //qDebug() << val;
-
-    if(QCenRep::ChangeValStr(TUid::Uid(0x101FFCD2), 0x1, val) != KErrNone) {
-        CRep4All();
-        return false;
-    }
-    return true;
-}
-
-bool Delight::removeMusicLibrary(const QString &value) noexcept {
-    QString val;
-    QCenRep::ReadValStr(TUid::Uid(0x101FFCD2), 0x1, &val);
-    val.replace(value, "");
-    if(val.endsWith('|')) {
-        val = val.left(val.length()-1);
-    }
-    if(val.startsWith('|')) {
-        val = val.right(val.length()-1);
-    }
-
-    //qDebug() << val;
-
-    if(QCenRep::ChangeValStr(TUid::Uid(0x101FFCD2), 0x1, val) != KErrNone) {
-        CRep4All();
-        return false;
-    }
-    return true;
 }
 
 QString Delight::getStartupReason() noexcept {
@@ -191,7 +139,7 @@ QString Delight::getStartupReason() noexcept {
 }
 
 void Delight::CRep4All() noexcept {
-    showError("You have to enable CRepository4all in ROMPatcher +.");
+    showError(QObject::tr("You have to enable CRepository4all in ROMPatcher."));
 }
 
 void Delight::error() noexcept {
@@ -259,9 +207,9 @@ void Delight::setFMTX(const QString &f) noexcept {
     CleanupStack::PushL(pDlg);
     TRequestStatus iStatus;
     pDlg->ShowMsgQueryL(iStatus,
-                        TPtrC16(reinterpret_cast<const TText*>(QString(QObject::tr("The new FM Transmitter RDS text is ") + "\"" + f + "\". " + QObject::tr("You have to reboot your device to apply it.\nDo you want to reboot now?")).constData())),
+                        TPtrC16(reinterpret_cast<const TText*>(QString(QObject::tr("The new FM transmitter RDS text is ") + "\"" + f + "\". " + QObject::tr("You have to reboot your device to apply it.\nDo you want to reboot now?")).constData())),
                         0x8cc0024,
-                        TPtrC16(reinterpret_cast<const TText*>(QObject::tr("Success").constData())),
+                        TPtrC16(reinterpret_cast<const TText*>(QObject::tr("Success!").constData())),
                         KNullDesC,
                         0,
                         -1,
@@ -320,7 +268,7 @@ void Delight::keyboard() noexcept {
     if(del()) {
         const QString result = QFileDialog::getOpenFileName(0, "Choose your qmltouchinput.dll file", "", "qmltouchinput.dll").replace("/","\\");
         if (!result.isEmpty()) {
-            execute(QString("note \"Wait ...\"\nrun peninputserver.exe\nkill peninputserver.exe\nkill 0x10281855\natt -r -h -s C:\\sys\\bin\\qmltouchinput.dll\ndelete C:\\sys\\bin\\qmltouchinput.dll\ncopy -o -r \""+ result + "\" C:\\sys\\bin\\qmltouchinput.dll\nnote \"Rebooting ...\"\nrun Restart.exe"));
+            execute(QString("note \"Wait...\"\nrun peninputserver.exe\nkill peninputserver.exe\nkill 0x10281855\natt -r -h -s C:\\sys\\bin\\qmltouchinput.dll\ndelete C:\\sys\\bin\\qmltouchinput.dll\ncopy -o -r \""+ result + "\" C:\\sys\\bin\\qmltouchinput.dll\nnote \"Rebooting...\"\nrun Restart.exe"));
         }
     }
 }
@@ -355,7 +303,7 @@ void Delight::anim(const QString &file, const QString &suffix) noexcept {
         }
         const QString result = QFileDialog::getOpenFileName(0, "Choose your "+file+suffix, "", "*"+suffix).replace("/","\\");
         if (!result.isEmpty()) {
-            execute(QString("copy -o -r \"" + result + " " + fname + "\"\nnote \"Done\""));
+            execute(QString("copy -o -r \"" + result + " " + fname + "\"\nnote \"Done!\""));
         }
     }
 }
@@ -381,7 +329,7 @@ QString Delight::getiso() noexcept {
 }
 
 void Delight::setiso() noexcept {
-    const QString result = QFileDialog::getOpenFileName(0, "Select a .iso file", "", "*.iso").replace("/","\\");
+    const QString result = QFileDialog::getOpenFileName(0, "Select an .iso file", "", "*.iso").replace("/","\\");
     if(result.isEmpty()) {
         return;
     }
@@ -400,6 +348,20 @@ QString Delight::getContest() noexcept {
 
 void Delight::setContest(const QString &value) noexcept {
     if(QCenRep::ChangeValStr(TUid::Uid(0x10282EC7), 0x1, value) == -46) {
+        CRep4All();
+        return;
+    }
+    success();
+}
+
+QString Delight::getChangeUserAgent() noexcept {
+    QString val;
+    QCenRep::ReadValStr(TUid::Uid(0x101F8731), 0x1, &val);
+    return val;
+}
+
+void Delight::setChangeUserAgent(const QString &value) noexcept {
+    if(QCenRep::ChangeValStr(TUid::Uid(0x101F8731), 0x1, value) == -46) {
         CRep4All();
         return;
     }
@@ -583,7 +545,7 @@ bool Delight::addAutostart(const QString &value, const bool &foreground) noexcep
             if(!QFile::exists("E:\\sys\\bin\\"+value)) {
                 if(!QFile::exists("F:\\sys\\bin\\"+value)) {
                     if(!QFile::exists("Z:\\sys\\bin\\"+value)) {
-                        showError(QString(value + QObject::tr(" doesn't exist!")));
+                        showError(QString(value + QObject::tr(" does not exist!")));
                         return false;
                     }
                 }
@@ -680,13 +642,13 @@ void Delight::disableChatIcon() noexcept {
         success();
     }
     else {
-        showError("Chat icon isn't enabled, it makes no sense to disable/reset it ;)");
+        showError(QObject::tr("Chat icon is not enabled, it makes no sense to disable/reset it."));
     }
 }
 
 bool Delight::calcNewHash(const QString &value) noexcept {
     if(!QFile::exists(value)) {
-        showError("Can't find " + value + ", go sure it exists and Open4All is enabled.");
+        showError("Cannot find " + value + ", make sure it exists and Open4All is enabled.");
         return false;
     }
     QCryptographicHash crypto(QCryptographicHash::Sha1);
@@ -705,7 +667,7 @@ bool Delight::calcNewHash(const QString &value) noexcept {
     file2.write(crypto.result());
     file2.close();
 
-    execute("mv -r -o "+file2.fileName().replace('/', '\\')+" C:\\sys\\hash\\"+QFileInfo(value).fileName()+"\nnote \"Success\"");
+    execute("mv -r -o "+file2.fileName().replace('/', '\\')+" C:\\sys\\hash\\"+QFileInfo(value).fileName()+"\nnote \"Success!\"");
     return true;
 }
 
@@ -752,7 +714,7 @@ void Delight::cache() noexcept {
 }
 
 void Delight::b(const QString &a) noexcept {
-    TRAP_IGNORE(CAknDiscreetPopup::ShowGlobalPopupL((_L("Wait")), (_L("Loading ...")),KAknsIIDNone, KNullDesC, 0, 0, 0x00000001, 0, NULL));
+    TRAP_IGNORE(CAknDiscreetPopup::ShowGlobalPopupL((_L("Wait...")), (_L("Loading...")),KAknsIIDNone, KNullDesC, 0, 0, 0x00000001, 0, NULL));
     TPtrC16 tUrl(reinterpret_cast<const TUint16*>(a.utf16()));
     RApaLsSession appArcSession;
     if(appArcSession.Connect() == KErrNone) {

@@ -1,0 +1,1 @@
+import QtQuick 1.1;import com.nokia.symbian 1.1;QueryDialog{titleText:"Delight FAQ";icon:"images/note.svg";message:qsTr("<p><center>Shows the FAQ of Delight CFW series.<p>");acceptButtonText:qsTr("Back");onAccepted:destroy();Component.onCompleted:open();}

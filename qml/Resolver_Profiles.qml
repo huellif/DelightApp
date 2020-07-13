@@ -1,0 +1,1 @@
+import QtQuick 1.1;import com.nokia.symbian 1.1;QueryDialog{titleText:qsTr("Profiles fixer");icon:"images/note_info.svg";message:qsTr("Troubles with profiles?\n\nReturn them to default settings?");acceptButtonText:qsTr("Fix");rejectButtonText:qsTr("Cancel");onAccepted:{Helper.resolver("Profiles.txt");destroy();}onRejected:destroy();Component.onCompleted:open();}

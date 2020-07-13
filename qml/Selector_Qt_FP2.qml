@@ -1,0 +1,1 @@
+import QtQuick 1.1;import com.nokia.symbian 1.1;QueryDialog{titleText:qsTr("Qt styling");icon:"images/note_info.svg";message:qsTr("Use grey FP2 QtQuick applications style?");acceptButtonText:"OK";rejectButtonText:qsTr("Cancel");onAccepted:Helper.resolver("Qt_FP2.txt");Component.onCompleted:open();onStatusChanged:if(status===DialogStatus.Closing)destroy();}

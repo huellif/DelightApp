@@ -1,0 +1,1 @@
+import QtQuick 1.1;import com.nokia.symbian 1.1;QueryDialog{titleText:qsTr("T9 fixer");icon:"images/note_info.svg";message:qsTr("Problems with T9?\n\nRemove all the words entered by you in T9 dictionary!");acceptButtonText:qsTr("Fix");rejectButtonText:qsTr("Cancel");onAccepted:{Helper.resolver("T9.txt");destroy();}onRejected:destroy();Component.onCompleted:open();}

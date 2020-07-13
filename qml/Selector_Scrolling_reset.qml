@@ -1,0 +1,1 @@
+import QtQuick 1.1;import com.nokia.symbian 1.1;Menu{MenuLayout{MenuItem{text:qsTr("Symbian Belle default");onClicked:d.cr("Selector_Scrolling_default.qml");}MenuItem{text:qsTr("Slippery scrolling");onClicked:d.cr("Selector_Scrolling_slippery.qml");}}Component.onCompleted:open();onStatusChanged:if(status===DialogStatus.Closing)destroy();}

@@ -1,5 +1,8 @@
 <RCC>
     <qresource prefix="/">
+        <file>other/102828b2.cre</file>
         <file>other/102858f2.cre</file>
+        <file>other/aidevstaplg.rsc</file>
+        <file>other/scutitem.o0000</file>
     </qresource>
 </RCC>

@@ -17,8 +17,8 @@ TARGET.EPOCHEAPSIZE = 0x40000 0x4000000
 
 DEPLOYMENT += my_deployment
 my_deployment.pkg_prerules += vendorinfo
-vendorinfo += "%{\"huellif\"}" ":\"huellif\""
-VERSION = 1.4.1
+vendorinfo += "%{\"Max Bondarchenko\"}" ":\"Max << Crazy | Doctor\""
+VERSION = 1.5.2
 
 TARGET.CAPABILITY += All -TCB
 
@@ -34,12 +34,12 @@ DEPLOYMENT.display_name += Delight App2
 
 SOURCES += \
     src/main.cpp \
-    src/delight.cpp \
+    src/Delight.cpp \
     src/QCenRep.cpp \
     src/MyFileWatcher.cpp
 
 HEADERS += \
-    inc/delight.h \
+    inc/Delight.h \
     inc/QCenRep.h \
     inc/MyFileWatcher.h
 
@@ -56,7 +56,7 @@ QT += declarative
 DEFINES += QT_USE_FAST_CONCATENATION QT_USE_FAST_OPERATOR_PLUS QT_NO_CAST_TO_ASCII
 DEFINES *= QT_USE_QSTRINGBUILDER
 
-TRANSLATIONS += i18n/DelightApp_en.ts i18n/DelightApp_de.ts i18n/DelightApp_ru.ts
+TRANSLATIONS += i18n/DelightApp_en.ts i18n/DelightApp_ru.ts
 
 lupdate_only {
     SOURCES = qml/*.*

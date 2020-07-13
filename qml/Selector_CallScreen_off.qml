@@ -1,0 +1,1 @@
+import QtQuick 1.1;import com.nokia.symbian 1.1;QueryDialog{titleText:qsTr("Call screen rotation");icon:"images/note_info.svg";message:qsTr("Do you want to disable call screen auto-rotation?");acceptButtonText:"OK";rejectButtonText:qsTr("Cancel");onAccepted:Helper.resolver("Call_off.txt");Component.onCompleted:open();onStatusChanged:if(status===DialogStatus.Closing)destroy();}

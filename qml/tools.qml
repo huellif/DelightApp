@@ -1,17 +1,1 @@
-import QtQuick 1.1;import com.nokia.symbian 1.1;
-Page{tools:ToolBarLayout{ToolButtonWithTip{iconSource:"toolbar-back";onClicked:pageStack.pop();toolTipText:qsTr("Back");}}
-    Flickable{anchors.fill:parent;contentHeight:o.height;flickableDirection:Flickable.VerticalFlick;
-        Column{id:o;
-            ListHeading{ListItemText{anchors.centerIn:parent;role:"Heading";text:"Tools";}}
-            ListItem{onClicked:pageStack.push("qrc:/qml/SelectorSubMenu_autostart.qml");ListItemText{role:"Title";text:qsTr("Autostart editor");anchors.verticalCenter:parent.verticalCenter;}}
-            ListItem{onClicked:pageStack.push("qrc:/qml/contest.qml");ListItemText{role:"Title";text:qsTr("Connectivity test editor");anchors.verticalCenter:parent.verticalCenter;}}
-            ListItem{onClicked:create("SelectorSubMenu_debug.qml");ListItemText{role:"Title";text:qsTr("Debug mode");anchors.verticalCenter:parent.verticalCenter;}}
-            ListItem{onClicked:create("SelectorSubMenu_hash.qml");ListItemText{role:"Title";text:qsTr("Hash calculator");anchors.verticalCenter:parent.verticalCenter;}}
-            ListItem{onClicked:create("LangCleanDialog.qml");ListItemText{role:"Title";text:qsTr("Language and Garbage Cleaner");anchors.verticalCenter:parent.verticalCenter;}}
-            ListItem{onClicked:create("LangChangerDialog.qml");ListItemText{role:"Title";text:qsTr("Language Changer");anchors.verticalCenter:parent.verticalCenter;}}
-            ListItem{onClicked:create("RegDialog.qml");ListItemText{role:"Title";text:qsTr("Registry Backup/Restore");anchors.verticalCenter:parent.verticalCenter;}}
-            ListItem{onClicked:create("StartupReason.qml");ListItemText{role:"Title";text:qsTr("Startup Reason");anchors.verticalCenter:parent.verticalCenter;}}
-
-        }
-    }
-}
+import QtQuick 1.1;import com.nokia.symbian 1.1;Page{tools:ToolBarLayout{ToolButtonWithTip{iconSource:"toolbar-back";onClicked:pageStack.pop();toolTipText:qsTr("Back");}}Flickable{anchors.fill:parent;contentHeight:o.height;flickableDirection:Flickable.VerticalFlick;Column{id:o;ListHeading{ListItemText{anchors.centerIn:parent;role:"Heading";text:qsTr("Tools");}}ListItem{onClicked:pageStack.push("qrc:/qml/Tools_Autostart.qml");ListItemText{role:"Title";text:qsTr(" Autostart Editor");anchors.verticalCenter:parent.verticalCenter;}}ListItem{onClicked:pageStack.push("qrc:/qml/Tools_ConTest.qml");ListItemText{role:"Title";text:qsTr(" Connectivity Test Editor");anchors.verticalCenter:parent.verticalCenter;}}ListItem{onClicked:create("Tools_Debug.qml");ListItemText{role:"Title";text:qsTr(" Debug Mode");anchors.verticalCenter:parent.verticalCenter;}}ListItem{onClicked:create("Tools_Hash.qml");ListItemText{role:"Title";text:qsTr(" Hash Calculator");anchors.verticalCenter:parent.verticalCenter;}}ListItem{onClicked:create("Tools_Garbage.qml");ListItemText{role:"Title";text:qsTr(" Language and Garbage Cleaner");anchors.verticalCenter:parent.verticalCenter;}}ListItem{onClicked:create("Tools_LanguageChanger.qml");ListItemText{role:"Title";text:qsTr(" Language Changer");anchors.verticalCenter:parent.verticalCenter;}}ListItem{onClicked:Helper.resolver("NumConvert.txt");ListItemText{role:"Title";text:" NumConvert";anchors.verticalCenter:parent.verticalCenter;}}ListItem{onClicked:create("Tools_Reg.qml");ListItemText{role:"Title";text:qsTr(" Registry Backup / Restore");anchors.verticalCenter:parent.verticalCenter;}}ListItem{onClicked:create("Tools_StartupReason.qml");ListItemText{role:"Title";text:qsTr(" Startup Reason");anchors.verticalCenter:parent.verticalCenter;}}ListItem{onClicked:pageStack.push("qrc:/qml/Tools_WlanMAC.qml");ListItemText{role:"Title";text:qsTr(" WLAN MAC Changer");anchors.verticalCenter:parent.verticalCenter;}}}}}

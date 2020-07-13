@@ -1,46 +1,71 @@
 <RCC>
     <qresource prefix="/">
-        <file>cmd/200159c9.txt</file>
+        <file>cmd/Acceleration_off.txt</file>
+        <file>cmd/Acceleration_on.txt</file>
+        <file>cmd/AdBlock_off.txt</file>
+        <file>cmd/AdBlock_on.txt</file>
         <file>cmd/Aknspasrv_off.txt</file>
         <file>cmd/Aknspasrv_on.txt</file>
         <file>cmd/Alarms.txt</file>
-        <file>cmd/avkon_disable.txt</file>
-        <file>cmd/avkon_enable.txt</file>
         <file>cmd/Cache.txt</file>
-        <file>cmd/cache_some.txt</file>
-        <file>cmd/camera.txt</file>
-        <file>cmd/changer.txt</file>
-        <file>cmd/DebugOff.txt</file>
-        <file>cmd/DebugOn.txt</file>
+        <file>cmd/Cache_off.txt</file>
+        <file>cmd/Cache_on.txt</file>
+        <file>cmd/Call_off.txt</file>
+        <file>cmd/Call_on.txt</file>
+        <file>cmd/Camera.txt</file>
+        <file>cmd/confirm.txt</file>
+        <file>cmd/ConnectionPopup_off.txt</file>
+        <file>cmd/ConnectionPopup_on.txt</file>
+        <file>cmd/Debug_off.txt</file>
+        <file>cmd/Debug_on.txt</file>
         <file>cmd/DReg.del</file>
-        <file>cmd/keyboard_black.txt</file>
-        <file>cmd/keyboard_blue.txt</file>
-        <file>cmd/keyboard_default.txt</file>
-        <file>cmd/keyboard_delight.txt</file>
+        <file>cmd/Fader_off.txt</file>
+        <file>cmd/Fader_on.txt</file>
+        <file>cmd/Garbage.txt</file>
+        <file>cmd/HSwidgets.txt</file>
+        <file>cmd/Keyboard_black.txt</file>
+        <file>cmd/Keyboard_blue.txt</file>
+        <file>cmd/Keyboard_delight.txt</file>
+        <file>cmd/Keyboard_original.txt</file>
+	<file>cmd/Keylight_off.txt</file>
+	<file>cmd/Keylight_on.txt</file>
         <file>cmd/Keylock_off.txt</file>
         <file>cmd/Keylock_on.txt</file>
-        <file>cmd/lang.txt</file>
+        <file>cmd/LanguageChanger.txt</file>
+        <file>cmd/Layout_34.txt</file>
+        <file>cmd/Layout_45.txt</file>
         <file>cmd/Libary.txt</file>
         <file>cmd/loop.txt</file>
-        <file>cmd/Menu.txt</file>
-        <file>cmd/menu_34.txt</file>
-        <file>cmd/menu_45.txt</file>
-        <file>cmd/menu_default.txt</file>
-        <file>cmd/menu_delight.txt</file>
+        <file>cmd/MapLoader.txt</file>
+        <file>cmd/MapServer_emmsite.txt</file>
+        <file>cmd/MapServer_ovi.txt</file>
+        <file>cmd/Menu_classic.txt</file>
+        <file>cmd/Menu_delight.txt</file>
+        <file>cmd/MicroSD_off.txt</file>
+        <file>cmd/MicroSD_on.txt</file>
         <file>cmd/MiniCMD.txt</file>
-        <file>cmd/patcher.txt</file>
+        <file>cmd/NumConvert.txt</file>
+        <file>cmd/Operator_off.txt</file>
+        <file>cmd/Operator_on.txt</file>
+        <file>cmd/Patcher.txt</file>
         <file>cmd/PC.txt</file>
         <file>cmd/Profiles.txt</file>
-        <file>cmd/sisregistry.txt</file>
-        <file>cmd/skins_classic.txt</file>
-        <file>cmd/skins_delight.txt</file>
-        <file>cmd/skins_FP2.txt</file>
+        <file>cmd/Pyfm_classic.txt</file>
+        <file>cmd/Pyfm_touch.txt</file>
+        <file>cmd/Qt_classic.txt</file>
+        <file>cmd/Qt_delight.txt</file>
+        <file>cmd/Qt_FP2.txt</file>
+        <file>cmd/Recorder.txt</file>
+        <file>cmd/SISRegistry.txt</file>
+        <file>cmd/SMS_C.txt</file>
+        <file>cmd/SMS_Z.txt</file>
         <file>cmd/T9.txt</file>
-        <file>cmd/tactile_off.txt</file>
-        <file>cmd/tactile_on.txt</file>
+        <file>cmd/Tactile_off.txt</file>
+        <file>cmd/Tactile_on.txt</file>
         <file>cmd/Widgets.txt</file>
-        <file>cmd/cache_off.txt</file>
-        <file>cmd/808_lightOff.txt</file>
-        <file>cmd/808_lightOn.txt</file>
+        <file>cmd/Widgets_classic.txt</file>
+        <file>cmd/Widgets_delight.txt</file>
+        <file>cmd/Widgets_FP2.txt</file>
+        <file>cmd/Wlan_MAC.txt</file>
     </qresource>
 </RCC>

@@ -1,94 +1,115 @@
 <RCC>
     <qresource prefix="/">
-        <file>qml/200159c9Fixer.qml</file>
         <file>qml/AboutDialog.qml</file>
-        <file>qml/AlarmsFixer.qml</file>
-        <file>qml/BrowserFixer.qml</file>
-        <file>qml/cache.qml</file>
-        <file>qml/CacheFixer.qml</file>
-        <file>qml/camera.qml</file>
-        <file>qml/ChangelogMenus.qml</file>
-        <file>qml/ChatFixer.qml</file>
-        <file>qml/classic.qml</file>
         <file>qml/Decorator.qml</file>
+        <file>qml/extras.qml</file>
+        <file>qml/FeaturesMenu.qml</file>
         <file>qml/HTML.qml</file>
-        <file>qml/InfoB.qml</file>
-        <file>qml/InfoC.qml</file>
-        <file>qml/InfoF.qml</file>
-        <file>qml/InfoU.qml</file>
-        <file>qml/LangChangerDialog.qml</file>
-        <file>qml/LangCleanDialog.qml</file>
-        <file>qml/LibFixer.qml</file>
+        <file>qml/InfoBackupRestore.qml</file>
+        <file>qml/InfoExtras.qml</file>
+        <file>qml/InfoFAQ.qml</file>
+        <file>qml/InfoFeatures.qml</file>
+        <file>qml/InfoUpdater.qml</file>
         <file>qml/main.qml</file>
         <file>qml/MainMenu.qml</file>
         <file>qml/MainPage.qml</file>
-        <file>qml/MainSubMenufreaxs.qml</file>
-        <file>qml/MainSubMenuhuellif.qml</file>
-        <file>qml/manual.qml</file>
-        <file>qml/MenuFixer.qml</file>
+        <file>qml/Menu_crazy.qml</file>
+        <file>qml/Menu_huellif.qml</file>
         <file>qml/MiniCMD.qml</file>
+        <file>qml/MiniCMD_comd.qml</file>
         <file>qml/MiniCMD_html.qml</file>
         <file>qml/MiniCMD_info.qml</file>
         <file>qml/MiniCMD_run.qml</file>
-        <file>qml/PCFixer.qml</file>
-        <file>qml/ProfilesFixer.qml</file>
         <file>qml/RebootDialog.qml</file>
-        <file>qml/RegDialog.qml</file>
-        <file>qml/ResolverDialog.qml</file>
-        <file>qml/ROMPatcher.qml</file>
+        <file>qml/resolver.qml</file>
+        <file>qml/Resolver_AknIconServer.qml</file>
+        <file>qml/Resolver_Alarms.qml</file>
+        <file>qml/Resolver_Browser.qml</file>
+        <file>qml/Resolver_Cache.qml</file>
+        <file>qml/Resolver_Camera.qml</file>
+        <file>qml/Resolver_Chat.qml</file>
+        <file>qml/Resolver_HSwidgets.qml</file>
+        <file>qml/Resolver_Libary.qml</file>
+        <file>qml/Resolver_MapLoader.qml</file>
+        <file>qml/Resolver_Patcher.qml</file>
+        <file>qml/Resolver_PC.qml</file>
+        <file>qml/Resolver_Profiles.qml</file>
+        <file>qml/Resolver_Recorder.qml</file>
+        <file>qml/Resolver_SISRegistry.qml</file>
+        <file>qml/Resolver_T9.qml</file>
+        <file>qml/Resolver_Widgets.qml</file>
         <file>qml/selector.qml</file>
-        <file>qml/Selector_actionDisabledAutostart.qml</file>
-        <file>qml/Selector_addAutostart.qml</file>
+        <file>qml/Selector_AdBlock.qml</file>
+        <file>qml/Selector_Aknspasrv.qml</file>
         <file>qml/Selector_Aknspasrv_off.qml</file>
         <file>qml/Selector_Aknspasrv_on.qml</file>
-        <file>qml/Selector_cache_off.qml</file>
-        <file>qml/Selector_cache_on.qml</file>
-        <file>qml/Selector_cache_some.qml</file>
-        <file>qml/Selector_caption.qml</file>
-        <file>qml/Selector_keyboard_black.qml</file>
-        <file>qml/Selector_keyboard_blue.qml</file>
-        <file>qml/Selector_keyboard_Delight.qml</file>
-        <file>qml/Selector_keyboard_FP2.qml</file>
-        <file>qml/Selector_light.qml</file>
-        <file>qml/Selector_menu_classic.qml</file>
-        <file>qml/Selector_menu_delight.qml</file>
-        <file>qml/Selector_removeAutostart.qml</file>
-        <file>qml/Selector_scrolling.qml</file>
-        <file>qml/Selector_scrolling_default.qml</file>
-        <file>qml/Selector_scrolling_slippery.qml</file>
-        <file>qml/Selector_scrollingOK.qml</file>
-        <file>qml/Selector_widgets.qml</file>
-        <file>qml/Selector_widgets_classic.qml</file>
-        <file>qml/Selector_widgets_delight.qml</file>
-        <file>qml/Selector_widgets_FP2.qml</file>
-        <file>qml/SelectorFMTX.qml</file>
-        <file>qml/SelectorSubMenu_aknspasrv.qml</file>
-        <file>qml/SelectorSubMenu_autostart.qml</file>
-        <file>qml/SelectorSubMenu_autostart_menu.qml</file>
-        <file>qml/SelectorSubMenu_caching.qml</file>
-        <file>qml/SelectorSubMenu_camera.qml</file>
-        <file>qml/SelectorSubMenu_Customization.qml</file>
-        <file>qml/SelectorSubMenu_debug.qml</file>
-        <file>qml/SelectorSubMenu_fader.qml</file>
-        <file>qml/SelectorSubMenu_hash.qml</file>
-        <file>qml/SelectorSubMenu_iso.qml</file>
-        <file>qml/SelectorSubMenu_keyboard.qml</file>
-        <file>qml/SelectorSubMenu_Keylock.qml</file>
-        <file>qml/SelectorSubMenu_layout.qml</file>
-        <file>qml/SelectorSubMenu_MenuSkin.qml</file>
-        <file>qml/SelectorSubMenu_scrolling.qml</file>
-        <file>qml/SelectorSubMenu_tactile.qml</file>
-        <file>qml/SelectorSubMenu_widgets.qml</file>
+        <file>qml/Selector_Cache.qml</file>
+        <file>qml/Selector_Cache_off.qml</file>
+        <file>qml/Selector_Cache_on.qml</file>
+        <file>qml/Selector_Cache_some.qml</file>
+        <file>qml/Selector_CallScreen.qml</file>
+        <file>qml/Selector_CallScreen_fixed.qml</file>
+        <file>qml/Selector_CallScreen_off.qml</file>
+        <file>qml/Selector_CallScreen_on.qml</file>
+        <file>qml/Selector_Camera.qml</file>
+        <file>qml/Selector_Caption.qml</file>
+        <file>qml/Selector_ConnectionPopup.qml</file>
+        <file>qml/Selector_ConnectionPopup_off.qml</file>
+        <file>qml/Selector_ConnectionPopup_on.qml</file>
+        <file>qml/Selector_Customisation.qml</file>
+        <file>qml/Selector_Fader.qml</file>
+        <file>qml/Selector_FMTX.qml</file>
+        <file>qml/Selector_InterfaceAccel.qml</file>
+        <file>qml/Selector_ISO.qml</file>
+        <file>qml/Selector_Keyboard.qml</file>
+        <file>qml/Selector_Keyboard_black.qml</file>
+        <file>qml/Selector_Keyboard_blue.qml</file>
+        <file>qml/Selector_Keyboard_delight.qml</file>
+        <file>qml/Selector_Keyboard_original.qml</file>
+        <file>qml/Selector_Keylight.qml</file>
+        <file>qml/Selector_Keylock.qml</file>
+        <file>qml/Selector_Layout.qml</file>
+        <file>qml/Selector_Light.qml</file>
+        <file>qml/Selector_MapServer.qml</file>
+        <file>qml/Selector_MapServer_emmsite.qml</file>
+        <file>qml/Selector_MapServer_ovi.qml</file>
+        <file>qml/Selector_Menu.qml</file>
+        <file>qml/Selector_Menu_classic.qml</file>
+        <file>qml/Selector_Menu_delight.qml</file>
+        <file>qml/Selector_MicroSD.qml</file>
+        <file>qml/Selector_Opera.qml</file>
+        <file>qml/Selector_Operator.qml</file>
+        <file>qml/Selector_Pyfm.qml</file>
+        <file>qml/Selector_Qt.qml</file>
+        <file>qml/Selector_Qt_classic.qml</file>
+        <file>qml/Selector_Qt_delight.qml</file>
+        <file>qml/Selector_Qt_FP2.qml</file>
+        <file>qml/Selector_Scrolling.qml</file>
+        <file>qml/Selector_Scrolling_apply.qml</file>
+        <file>qml/Selector_Scrolling_default.qml</file>
+        <file>qml/Selector_Scrolling_reset.qml</file>
+        <file>qml/Selector_Scrolling_slippery.qml</file>
+        <file>qml/Selector_Tactile.qml</file>
+        <file>qml/Selector_UserAgent.qml</file>
+        <file>qml/Selector_Widgets.qml</file>
+        <file>qml/Selector_Widgets_classic.qml</file>
+        <file>qml/Selector_Widgets_delight.qml</file>
+        <file>qml/Selector_Widgets_FP2.qml</file>
         <file>qml/SettingSlider.qml</file>
-        <file>qml/sisregistry.qml</file>
-        <file>qml/T9Fixer.qml</file>
         <file>qml/ToolButtonWithTip.qml</file>
-        <file>qml/WidgetsFixer.qml</file>
-        <file>qml/Selector_SubMenuKeylight.qml</file>
-        <file>qml/MiniCMD_cli.qml</file>
-        <file>qml/SelectorSubMenu_music.qml</file>
         <file>qml/tools.qml</file>
-        <file>qml/StartupReason.qml</file>
-        <file>qml/contest.qml</file>
+        <file>qml/Tools_Autostart.qml</file>
+        <file>qml/Tools_Autostart_add.qml</file>
+        <file>qml/Tools_Autostart_disable.qml</file>
+        <file>qml/Tools_Autostart_menu.qml</file>
+        <file>qml/Tools_Autostart_remove.qml</file>
+        <file>qml/Tools_ConTest.qml</file>
+        <file>qml/Tools_Debug.qml</file>
+        <file>qml/Tools_Garbage.qml</file>
+        <file>qml/Tools_Hash.qml</file>
+        <file>qml/Tools_LanguageChanger.qml</file>
+        <file>qml/Tools_Reg.qml</file>
+        <file>qml/Tools_StartupReason.qml</file>
+        <file>qml/Tools_WlanMAC.qml</file>
     </qresource>
 </RCC>

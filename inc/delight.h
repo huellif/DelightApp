@@ -85,17 +85,15 @@ public:
 
     Q_INVOKABLE static void execute(const QString &myMiniCMDString) noexcept;
 
-    Q_INVOKABLE static QVariant getMusicLibrary() noexcept;
-
-    Q_INVOKABLE static bool addMusicLibrary() noexcept;
-
-    Q_INVOKABLE static bool removeMusicLibrary(const QString &value) noexcept;
-
     Q_INVOKABLE static QString getStartupReason() noexcept;
 
     Q_INVOKABLE static QString getContest() noexcept;
 
     Q_INVOKABLE static void setContest(const QString &value) noexcept;
+
+    Q_INVOKABLE static QString getChangeUserAgent() noexcept;
+
+    Q_INVOKABLE static void setChangeUserAgent(const QString &value) noexcept;
 
 private:
 
